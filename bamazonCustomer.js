@@ -39,16 +39,17 @@ function displayProd() {
             connection.query(query2, function(err, data){
                 if (err) throw err;
                 // console.log(data)
+                var quantity = answers.quant;
                 var currQuantity = data[0].stock_quantity;
                 var newQuantity = currQuantity - answers.quant; //need to do this in a connection.query
-                var cost = data[0].price*currQuantity;
+                var cost = data[0].price*quantity;
                 var name = data[0].product_name;
 // console.log(newQuantity)
                 if (newQuantity < 0) {
                     console.log("Insufficient stock, please choose another product!")
                     displayProd();
                 } else {
-                    updateProduct(id, newQuantity, cost, name);
+                    updateProduct(id, newQuantity, cost, name, quantity);
                 }
                 // var reqAmount = answers.quant //users requested amount
             })
@@ -61,7 +62,7 @@ function displayProd() {
 displayProd();
 
 
-function updateProduct(id, newQuantity, cost, name) {
+function updateProduct(id, newQuantity, cost, name, quantity) {
     
 
     connection.query(
@@ -71,6 +72,6 @@ function updateProduct(id, newQuantity, cost, name) {
     
     )
    
-        console.log(`You purchased ${id} ${name} for ${cost}`)
+        console.log(`You purchased ${quantity} ${name} for ${cost}`)
     
 }
