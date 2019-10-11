@@ -2,7 +2,7 @@
 
 <h1>Welcome to Bamazon!</h1>
 
-An app where you can shop for your favorite items at the click of a button. Just enter the product number of the product you'd like to purchase, then the quantity, then "BAMAZON!" You're all set!
+An app where you can shop for your favorite items at the click of a button. Just enter the product number of the product you'd like to purchase, then the quantity, and "BAMAZON!" You're all set!
 
 Step one, select product:<br>
 ![step one screenshot](Images/screenshot1.jpg);
