@@ -8,9 +8,9 @@ Step one, select product:<br>
 ![step one screenshot](Images/screenshot1.jpg);
 
 Step two, enter quantity:<br>
-![step two screenshot](Images/screenshot2.jpg);
+![step two screenshot](Images/screenshot22.jpg);
 
 Step three, enjoy!<br>
-![step three screenshot](Images/screenshot3.jpg);
+![step three screenshot](Images/screenshot33.jpg);
 
 Technologies used: Node, MySQL
