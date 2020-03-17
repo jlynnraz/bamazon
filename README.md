@@ -38,7 +38,7 @@ The code uses a prompt to ask the user what they would like to buy, and how many
             }
 ~~~
 
-It follows with a .then to check stock in mySQL and update accordingly:
+It follows with a .then to check stock in MySQL and update accordingly:
 ~~~
        ]).then(function (answers) {
             var id = answers.id; //this gives us users id choice
